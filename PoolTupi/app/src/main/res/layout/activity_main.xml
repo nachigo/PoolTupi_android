@@ -34,7 +34,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="99dp"
+                    android:layout_height="88dp"
                     android:orientation="horizontal">
 
                     <Space
@@ -43,7 +43,7 @@
 
                     <android.support.v7.widget.CardView
                         android:layout_width="328dp"
-                        android:layout_height="85dp"
+                        android:layout_height="75dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="5dp"
                         app:cardElevation="5dp"
@@ -62,7 +62,7 @@
                                 app:srcCompat="@drawable/effor" />
 
                             <LinearLayout
-                                android:layout_width="102dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:orientation="vertical">
@@ -70,22 +70,37 @@
                                 <TextView
                                     android:id="@+id/TxtEffort"
                                     android:layout_width="match_parent"
-                                    android:layout_height="32dp"
-                                    android:textAlignment="textEnd"
-                                    android:textSize="18sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:id="@+id/Txt3"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="22dp"
+                                    android:layout_height="34dp"
                                     android:layout_marginBottom="8dp"
                                     android:layout_marginEnd="8dp"
                                     android:layout_marginStart="8dp"
                                     android:layout_marginTop="8dp"
+                                    android:layout_weight="1"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.037"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.01" />
+
+                                <TextView
+                                    android:id="@+id/Txt3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="37dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="1"
                                     android:text="Esforço atual"
                                     android:textAlignment="textEnd"
-                                    android:textSize="16sp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.037"
@@ -134,7 +149,7 @@
 
                             <ImageView
                                 android:id="@+id/IMGMiners"
-                                android:layout_width="51dp"
+                                android:layout_width="54dp"
                                 android:layout_height="46dp"
                                 app:srcCompat="@drawable/miners" />
 
@@ -147,21 +162,37 @@
                                 <TextView
                                     android:id="@+id/TxtMiners"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:textAlignment="textEnd"
-                                    android:textSize="18sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="22dp"
+                                    android:layout_height="34dp"
                                     android:layout_marginBottom="8dp"
                                     android:layout_marginEnd="8dp"
                                     android:layout_marginStart="8dp"
                                     android:layout_marginTop="8dp"
-                                    android:text="Mineradores"
+                                    android:layout_weight="1"
                                     android:textAlignment="textEnd"
-                                    android:textSize="16sp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.037"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.01" />
+
+                                <TextView
+
+                                    android:text="Mineradores"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="34dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="1"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.037"
@@ -173,8 +204,7 @@
 
                             <Space
                                 android:layout_width="12dp"
-                                android:layout_height="64dp"
-                                android:layout_weight="0.01" />
+                                android:layout_height="64dp" />
 
                         </LinearLayout>
 
@@ -188,7 +218,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="98dp"
+                    android:layout_height="88dp"
                     android:orientation="horizontal">
 
                     <Space
@@ -197,7 +227,7 @@
 
                     <android.support.v7.widget.CardView
                         android:layout_width="328dp"
-                        android:layout_height="80dp"
+                        android:layout_height="75dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="5dp"
                         app:cardElevation="5dp"
@@ -211,7 +241,7 @@
 
                             <ImageView
                                 android:id="@+id/imageView2"
-                                android:layout_width="44dp"
+                                android:layout_width="54dp"
                                 android:layout_height="41dp"
                                 app:srcCompat="@drawable/pick" />
 
@@ -224,22 +254,37 @@
                                 <TextView
                                     android:id="@+id/TxtHashratePool"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:textAlignment="textEnd"
-                                    android:textSize="18sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:id="@+id/Txt1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="37dp"
+                                    android:layout_height="34dp"
                                     android:layout_marginBottom="8dp"
                                     android:layout_marginEnd="8dp"
                                     android:layout_marginStart="8dp"
                                     android:layout_marginTop="8dp"
-                                    android:text="Hashrate da pool"
+                                    android:layout_weight="1"
                                     android:textAlignment="textEnd"
-                                    android:textSize="16sp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.037"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.01" />
+
+                                <TextView
+                                    android:id="@+id/Txt1"
+                                    android:text="Hashrate da pool"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="34dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="1"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.037"
@@ -251,8 +296,7 @@
 
                             <Space
                                 android:layout_width="12dp"
-                                android:layout_height="64dp"
-                                android:layout_weight="0.01" />
+                                android:layout_height="64dp" />
 
                         </LinearLayout>
 
@@ -266,7 +310,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="98dp"
+                    android:layout_height="88dp"
                     android:orientation="horizontal">
 
                     <Space
@@ -275,7 +319,7 @@
 
                     <android.support.v7.widget.CardView
                         android:layout_width="328dp"
-                        android:layout_height="81dp"
+                        android:layout_height="75dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="5dp"
                         app:cardElevation="5dp"
@@ -289,7 +333,7 @@
 
                             <ImageView
                                 android:id="@+id/imageView1"
-                                android:layout_width="47dp"
+                                android:layout_width="54dp"
                                 android:layout_height="51dp"
                                 app:srcCompat="@drawable/bloco" />
 
@@ -302,22 +346,37 @@
                                 <TextView
                                     android:id="@+id/TxtBlock"
                                     android:layout_width="match_parent"
-                                    android:layout_height="32dp"
-                                    android:textAlignment="textEnd"
-                                    android:textSize="18sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:id="@+id/Txt2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="22dp"
+                                    android:layout_height="34dp"
                                     android:layout_marginBottom="8dp"
                                     android:layout_marginEnd="8dp"
                                     android:layout_marginStart="8dp"
                                     android:layout_marginTop="8dp"
-                                    android:text="Blocos "
+                                    android:layout_weight="1"
                                     android:textAlignment="textEnd"
-                                    android:textSize="16sp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.037"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.01" />
+
+                                <TextView
+                                    android:id="@+id/Txt2"
+                                    android:text="Blocos"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="34dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="1"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="0.037"
@@ -329,8 +388,7 @@
 
                             <Space
                                 android:layout_width="12dp"
-                                android:layout_height="64dp"
-                                android:layout_weight="0.01" />
+                                android:layout_height="64dp" />
 
                         </LinearLayout>
 
@@ -357,6 +415,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/Text_inicial_titulo"
                             android:textAlignment="center"
+                            android:textColor="@android:color/black"
                             android:textSize="23sp"
                             android:textStyle="bold" />
 
@@ -370,6 +429,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/Text_inicial_1titulo_sec"
                             android:textAlignment="center"
+                            android:textColor="@android:color/black"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -393,6 +453,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/Text_inicial_2titulo_sec"
                             android:textAlignment="center"
+                            android:textColor="@android:color/black"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 

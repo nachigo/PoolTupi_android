@@ -59,6 +59,7 @@
                                 android:layout_height="34dp"
                                 android:text="@string/ID_carteira"
                                 android:textAlignment="center"
+                                android:textColor="@android:color/black"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
 
@@ -162,6 +163,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:textAlignment="center"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
@@ -175,6 +177,7 @@
                                     android:layout_weight="1"
                                     android:text="Hashrate"
                                     android:textAlignment="center"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -241,6 +244,7 @@
                                     android:layout_height="8dp"
                                     android:layout_weight="1"
                                     android:textAlignment="center"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
@@ -254,6 +258,7 @@
                                     android:layout_weight="1"
                                     android:text="Total hashes"
                                     android:textAlignment="center"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -319,6 +324,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:textAlignment="center"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
@@ -332,6 +338,7 @@
                                     android:layout_weight="1"
                                     android:text="Total pago"
                                     android:textAlignment="center"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -398,6 +405,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:textAlignment="center"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold" />
 
@@ -411,6 +419,7 @@
                                     android:layout_weight="1"
                                     android:text="Total devido"
                                     android:textAlignment="center"
+                                    android:textColor="@android:color/black"
                                     android:textSize="18sp"
                                     android:textStyle="bold"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -483,6 +492,7 @@
                                             android:layout_height="wrap_content"
                                             android:text="Trabalhador"
                                             android:textAlignment="center"
+                                            android:textColor="@android:color/black"
                                             android:textSize="16sp" />
 
                                         <TextView
@@ -491,6 +501,7 @@
                                             android:layout_height="wrap_content"
                                             android:text="Hash rate"
                                             android:textAlignment="center"
+                                            android:textColor="@android:color/black"
                                             android:textSize="16sp" />
 
                                         <TextView
@@ -499,6 +510,7 @@
                                             android:layout_height="wrap_content"
                                             android:text="Total hashes"
                                             android:textAlignment="center"
+                                            android:textColor="@android:color/black"
                                             android:textSize="16sp" />
 
                                         <TextView
@@ -507,6 +519,7 @@
                                             android:layout_height="wrap_content"
                                             android:text="Último hash"
                                             android:textAlignment="center"
+                                            android:textColor="@android:color/black"
                                             android:textSize="16sp" />
                                     </TableRow>
 
