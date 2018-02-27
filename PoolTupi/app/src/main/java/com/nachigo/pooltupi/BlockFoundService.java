@@ -75,7 +75,6 @@ public class BlockFoundService  extends IntentService{
                     notificando();
                 } else {
                     //Do nothing
-                    notificando();
                 }
                 new Thread().sleep(59000);
             } catch (Exception e) {
@@ -109,10 +108,9 @@ public class BlockFoundService  extends IntentService{
                         PendingIntent.FLAG_UPDATE_CURRENT
                 );
         mBuilder.setContentIntent(resultPendingIntent);
-       // NotificationManager mNotificationManager =
-       //         (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-// mId allows you to update the notification later on.
-        //mNotificationManager.notify(mId, mBuilder.build());
+        NotificationManager mNotificationManager =
+                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        mNotificationManager.notify(0, mBuilder.build());
     }
 
 }
