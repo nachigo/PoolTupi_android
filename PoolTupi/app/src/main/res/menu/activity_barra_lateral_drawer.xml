@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicial"
+            android:icon="@drawable/aeon"
+            android:title="Página Inicial" />
+        <item
+            android:id="@+id/nav_painel"
+            android:icon="@drawable/pick"
+            android:title="Painel" />
+        <item
+            android:id="@+id/nav_duvidas"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="Tire suas dúvidas" />
+    </group>
+
+    <item android:title="Comunidade">
+        <menu>
+            <item
+                android:id="@+id/nav_telegram"
+                android:icon="@drawable/telegram"
+                android:title="Telegram Group" />
+            <item
+                android:id="@+id/nav_whatsapp"
+                android:icon="@drawable/whatsapp"
+                android:title="WhatsApp Group" />
+        </menu>
+    </item>
+    <item android:title="Info">
+        <menu>
+            <item
+                android:id="@+id/nav_Config"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Configurações" />
+            <item
+                android:id="@+id/nav_Sobre"
+                android:icon="@drawable/about"
+                android:title="Sobre" />
+        </menu>
+    </item>
+
+</menu>

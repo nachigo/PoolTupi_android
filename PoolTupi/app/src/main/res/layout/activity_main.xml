@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include
+            layout="@layout/app_bar_barra_lateral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="328dp"
+                        android:layout_height="85dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        tools:layout_editor_absoluteX="58dp"
+                        tools:layout_editor_absoluteY="270dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="74dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/IMGEffor"
+                                android:layout_width="54dp"
+                                android:layout_height="52dp"
+                                app:srcCompat="@drawable/effor" />
+
+                            <LinearLayout
+                                android:layout_width="102dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/TxtEffort"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="32dp"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/Txt3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="22dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Esforço atual"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.037"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.01" />
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="12dp"
+                                android:layout_height="48dp" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <Space
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="328dp"
+                        android:layout_height="75dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        tools:layout_editor_absoluteX="58dp"
+                        tools:layout_editor_absoluteY="270dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/IMGMiners"
+                                android:layout_width="51dp"
+                                android:layout_height="46dp"
+                                app:srcCompat="@drawable/miners" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/TxtMiners"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="22dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Mineradores"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.037"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.01" />
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="12dp"
+                                android:layout_height="64dp"
+                                android:layout_weight="0.01" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <Space
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="328dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        tools:layout_editor_absoluteX="58dp"
+                        tools:layout_editor_absoluteY="270dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="44dp"
+                                android:layout_height="41dp"
+                                app:srcCompat="@drawable/pick" />
+
+                            <LinearLayout
+                                android:layout_width="118dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/TxtHashratePool"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/Txt1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="37dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Hashrate da pool"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.037"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.01" />
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="12dp"
+                                android:layout_height="64dp"
+                                android:layout_weight="0.01" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <Space
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="328dp"
+                        android:layout_height="81dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        tools:layout_editor_absoluteX="58dp"
+                        tools:layout_editor_absoluteY="270dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="74dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="47dp"
+                                android:layout_height="51dp"
+                                app:srcCompat="@drawable/bloco" />
+
+                            <LinearLayout
+                                android:layout_width="110dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/TxtBlock"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="32dp"
+                                    android:textAlignment="textEnd"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/Txt2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="22dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Blocos "
+                                    android:textAlignment="textEnd"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.037"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.01" />
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="12dp"
+                                android:layout_height="64dp"
+                                android:layout_weight="0.01" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <Space
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Text_inicial_titulo"
+                            android:textAlignment="center"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Text_inicial_1titulo_sec"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Text_inicial_parte_inicial"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="19dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Text_inicial_2titulo_sec"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="14dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Text_inicial_topicos0"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Text_inicial_topicos1"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Text_inicial_topicos2"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Text_inicial_topicos3"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.01" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
