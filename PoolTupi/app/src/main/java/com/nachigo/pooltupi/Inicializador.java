@@ -10,6 +10,8 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.w3c.dom.Text;
 
+import java.text.DecimalFormat;
+
 /**
  * Created by Gustavo on 23/02/2018.
  */
@@ -48,7 +50,7 @@ public class Inicializador {
         }
     }
 
-    public void setDashboard (TextView HashMiner, TextView TotalHash, TextView TotalDevido, TextView TotalPago, String Wallet, Context mContext) {
+    public void setDashboard (TextView HashMiner, TextView TotalHash, TextView TotalDevido, TextView TotalPago, TextView priceAeonBrl, String Wallet, Context mContext) {
         try {
             String respostaMiner = new HttpConnections().execute("https://pooltupi.com/api/miner/"+Wallet+"/stats").get();
             JSONObject obj = new JSONObject(respostaMiner);
@@ -65,10 +67,18 @@ public class Inicializador {
                 hs = hashrate + " H/s";
             }
 
+            String respostaCoinMarket = new HttpConnections().execute("https://api.coinmarketcap.com/v1/ticker/aeon/?convert=BRL").get();
+            JSONArray objCoinMarket = new JSONArray(respostaCoinMarket);
+            double price = objCoinMarket.getJSONObject(0).getDouble("price_brl");
+            DecimalFormat df = new DecimalFormat("0.##");
+            String priceString = "R$ " + df.format(price);
+
+
             double devidoDec = devido*0.000000000001;
             double pagoDec = pago*0.000000000001;
 
             String pagoString = pagoDec + " AEON";
+            priceAeonBrl.setText(priceString);
             HashMiner.setText(hs);
             TotalHash.setText(totalHash);
             TotalDevido.setText(devidoDec + " AEON");

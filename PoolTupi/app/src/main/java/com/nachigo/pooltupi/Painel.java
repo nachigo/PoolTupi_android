@@ -110,6 +110,7 @@ public class Painel extends AppCompatActivity implements NavigationView.OnNaviga
         TextView TotalHash = findViewById(R.id.TxtTotalHashes);
         TextView TotalDevido = findViewById(R.id.TxtDevido);
         TextView TotalPago = findViewById(R.id.TxtPago);
+        TextView Price = findViewById(R.id.TxtAeonBrl);
         TextView Worker1Nome = findViewById(R.id.Worker1Name);
         TextView Worker1Hs = findViewById(R.id.Worker1Hs);
         TextView Worker1TH = findViewById(R.id.Worker1TH);
@@ -184,7 +185,7 @@ public class Painel extends AppCompatActivity implements NavigationView.OnNaviga
         } catch (Exception e){
             e.printStackTrace();
         }
-        new Inicializador().setDashboard(HashMiner, TotalHash, TotalDevido, TotalPago, Wallet, getApplicationContext());
+        new Inicializador().setDashboard(HashMiner, TotalHash, TotalDevido, TotalPago, Price, Wallet, getApplicationContext());
     }
 
     @Override
