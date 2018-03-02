@@ -448,7 +448,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="170dp"
+                    android:layout_height="97dp"
                     android:orientation="horizontal">
 
                     <Space
@@ -457,7 +457,88 @@
 
                     <android.support.v7.widget.CardView
                         android:layout_width="328dp"
-                        android:layout_height="150dp"
+                        android:layout_height="81dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="18dp"
+                        tools:layout_editor_absoluteX="58dp"
+                        tools:layout_editor_absoluteY="270dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:id="@+id/TxtAeonBrl"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_weight="1"
+                                    android:text="Valor AEON/BRL"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.037"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.01" />
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="12dp"
+                                android:layout_height="64dp"
+                                android:layout_weight="0.01" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <Space
+                        android:layout_width="18dp"
+                        android:layout_height="33dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="18dp"
+                        android:layout_height="33dp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="328dp"
+                        android:layout_height="240dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="5dp"
                         app:cardElevation="18dp"
@@ -490,7 +571,7 @@
                                             android:id="@+id/textView7"
                                             android:layout_width="105dp"
                                             android:layout_height="wrap_content"
-                                            android:text="Trabalhador"
+                                            android:text="@string/WorkerName"
                                             android:textAlignment="center"
                                             android:textColor="@android:color/black"
                                             android:textSize="16sp" />
@@ -499,7 +580,7 @@
                                             android:id="@+id/textView6"
                                             android:layout_width="89dp"
                                             android:layout_height="wrap_content"
-                                            android:text="Hash rate"
+                                            android:text="@string/WorkerHS"
                                             android:textAlignment="center"
                                             android:textColor="@android:color/black"
                                             android:textSize="16sp" />
@@ -508,7 +589,7 @@
                                             android:id="@+id/textView5"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="Total hashes"
+                                            android:text="@string/WorkerTH"
                                             android:textAlignment="center"
                                             android:textColor="@android:color/black"
                                             android:textSize="16sp" />
@@ -517,7 +598,7 @@
                                             android:id="@+id/textView"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="Último hash"
+                                            android:text="@string/WokerLH"
                                             android:textAlignment="center"
                                             android:textColor="@android:color/black"
                                             android:textSize="16sp" />
@@ -526,7 +607,7 @@
                                     <TableRow
                                         android:id="@+id/Worker1"
                                         android:layout_width="match_parent"
-                                        android:layout_height="39dp">
+                                        android:layout_height="match_parent">
 
                                         <TextView
                                             android:id="@+id/Worker1Name"
@@ -627,7 +708,613 @@
                                             android:textSize="16sp" />
 
                                     </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/worker4Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker4Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker4TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker4LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/worker5Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker5Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker5TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker5LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/worker6Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker6Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker6TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker6LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/worker7Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker7Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker7TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker7LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker8"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/worker8Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker8Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker8TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker8LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker9"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/worker9Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker9Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker9TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker9LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker10"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/worker10Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker10Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker10TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker10LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker11"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/Worker11Name"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/Worker11Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/Worker11TH"
+                                            android:layout_width="114dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/Worker11LH"
+                                            android:layout_width="119dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker12"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/worker12Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker12Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker12TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker12LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker13"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/worker13Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker13Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker13TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker13LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker14"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/worker14Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker14Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker14TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker14LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker15"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/worker15Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker15Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker15TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker15LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker16"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/worker16Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker16Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker16TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker16LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker17"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/worker17Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker17Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker17TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker17LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker18"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/worker18Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker18Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker18TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker18LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker19"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/worker19Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker19Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker19TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker19LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:id="@+id/Worker20"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/worker20Nome"
+                                            android:layout_width="105dp"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker20Hs"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker20TH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/worker20LH"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textAlignment="center"
+                                            android:textSize="16sp" />
+
+                                    </TableRow>
+
                                 </TableLayout>
+
                             </LinearLayout>
                         </HorizontalScrollView>
 
@@ -635,9 +1322,14 @@
 
                     <Space
                         android:layout_width="18dp"
-                        android:layout_height="33dp" />
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0" />
 
                 </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
             </LinearLayout>
 
