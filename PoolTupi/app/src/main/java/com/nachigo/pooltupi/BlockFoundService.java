@@ -44,8 +44,6 @@ public class BlockFoundService  extends IntentService{
 
     @Override
     protected void onHandleIntent(Intent workIntent) {
-        boolean block = false;
-        while (!block) {
             try {
                 SharedPreferences settings = getSharedPreferences("tupiniquim", 0);
                 SharedPreferences.Editor editor = settings.edit();
@@ -61,7 +59,7 @@ public class BlockFoundService  extends IntentService{
                     InputStream in = new BufferedInputStream(urlConnection.getInputStream());
 
                     reader = new BufferedReader(new InputStreamReader(in));
-                    String line = "";
+                    String line ;
                     StringBuffer buffer = new StringBuffer();
                     while ((line = reader.readLine()) != null) {
                         buffer.append(line);
@@ -78,9 +76,9 @@ public class BlockFoundService  extends IntentService{
                 int blockFound = objPool.getJSONObject("pool_statistics").getInt("totalBlocksFound");
                 if (lastBlock>0) {
                     if (blockFound>lastBlock) {
-                        block = true;
                         editor.putInt("lastBlock", blockFound);
                         editor.commit();
+                        notificando();
                     } else {
                         //não encontrou, faça um grande nada
                     }
@@ -93,8 +91,6 @@ public class BlockFoundService  extends IntentService{
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }
-        notificando();
     }
 
     public void notificando(){
@@ -102,6 +98,7 @@ public class BlockFoundService  extends IntentService{
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
                         .setSmallIcon(R.drawable.aeon)
+                        .setContentIntent(PendingIntent.getActivity(getApplicationContext(), 0, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT))
                         .setContentTitle("PoolTupi")
                         .setContentText("Novo bloco encontrado!!!")
                         .setPriority(1)

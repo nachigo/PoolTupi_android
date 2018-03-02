@@ -1,7 +1,9 @@
 package com.nachigo.pooltupi;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -53,9 +55,16 @@ public class Settings extends AppCompatActivity implements NavigationView.OnNavi
                     SharedPreferences.Editor editor = settings.edit();
                     editor.putBoolean("notify", true);
                     editor.commit();
+
+                    AlarmMgr alarmMgr = new AlarmMgr();
+                    alarmMgr.Alarm(getApplicationContext());
                     try {
-                        Intent mServiceIntent = new Intent(getApplicationContext(), BlockFoundService.class);
-                        startService(mServiceIntent);
+                        ComponentName receiver = new ComponentName(getApplicationContext(), SampleBootReceiver.class);
+                        PackageManager pm = getApplicationContext().getPackageManager();
+
+                        pm.setComponentEnabledSetting(receiver,
+                                PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
+                                PackageManager.DONT_KILL_APP);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -64,6 +73,15 @@ public class Settings extends AppCompatActivity implements NavigationView.OnNavi
                     SharedPreferences.Editor editor = settings.edit();
                     editor.putBoolean("notify", false);
                     editor.commit();
+
+                    ComponentName receiver = new ComponentName(getApplicationContext(), SampleBootReceiver.class);
+                    PackageManager pm = getApplicationContext().getPackageManager();
+
+                    pm.setComponentEnabledSetting(receiver,
+                            PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+                            PackageManager.DONT_KILL_APP);
+                    AlarmMgr alarmMgr = new AlarmMgr();
+                    alarmMgr.CancelAlarm(getApplicationContext());
                     try {
                         Intent mServiceIntent = new Intent(getApplicationContext(), BlockFoundService.class);
                         stopService(mServiceIntent);

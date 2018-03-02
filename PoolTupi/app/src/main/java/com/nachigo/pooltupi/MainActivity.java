@@ -35,26 +35,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
         Inicia();
-        serviceStart();
-    }
-
-    public void serviceStart() {
-
         SharedPreferences settings = getSharedPreferences("tupiniquim", 0);
-        SharedPreferences.Editor editor = settings.edit();
         Boolean notify = settings.getBoolean("notify", true);
-        if (notify)
-
-        {
+        if (notify){
             try {
                 Intent mServiceIntent = new Intent(getApplicationContext(), BlockFoundService.class);
                 startService(mServiceIntent);
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        } else
-
-        {
+        } else {
             try {
                 Intent mServiceIntent = new Intent(getApplicationContext(), BlockFoundService.class);
                 stopService(mServiceIntent);
@@ -62,8 +52,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 e.printStackTrace();
             }
         }
-
     }
+
 
     private void Inicia(){
         TextView HashPool = findViewById(R.id.TxtHashratePool);

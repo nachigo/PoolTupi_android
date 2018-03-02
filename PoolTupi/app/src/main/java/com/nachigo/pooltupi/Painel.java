@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -123,6 +124,87 @@ public class Painel extends AppCompatActivity implements NavigationView.OnNaviga
         TextView Worker3Hs = findViewById(R.id.worker3Hs);
         TextView Worker3TH = findViewById(R.id.worker3TH);
         TextView Worker3Ls = findViewById(R.id.worker3LH);
+        TextView Worker4Nome = findViewById(R.id.worker4Nome);
+        TextView Worker4Hs = findViewById(R.id.worker4Hs);
+        TextView Worker4TH = findViewById(R.id.worker4TH);
+        TextView Worker4Ls = findViewById(R.id.worker4LH);
+
+        TextView Worker5Nome = findViewById(R.id.worker5Nome);
+        TextView Worker5Hs = findViewById(R.id.worker5Hs);
+        TextView Worker5TH = findViewById(R.id.worker5TH);
+        TextView Worker5Ls = findViewById(R.id.worker5LH);
+
+        TextView Worker6Nome = findViewById(R.id.worker6Nome);
+        TextView Worker6Hs = findViewById(R.id.worker6Hs);
+        TextView Worker6TH = findViewById(R.id.worker6TH);
+        TextView Worker6Ls = findViewById(R.id.worker6LH);
+
+        TextView Worker7Nome = findViewById(R.id.worker7Nome);
+        TextView Worker7Hs = findViewById(R.id.worker7Hs);
+        TextView Worker7TH = findViewById(R.id.worker7TH);
+        TextView Worker7Ls = findViewById(R.id.worker7LH);
+
+        TextView Worker8Nome = findViewById(R.id.worker8Nome);
+        TextView Worker8Hs = findViewById(R.id.worker8Hs);
+        TextView Worker8TH = findViewById(R.id.worker8TH);
+        TextView Worker8Ls = findViewById(R.id.worker8LH);
+
+        TextView Worker9Nome = findViewById(R.id.worker9Nome);
+        TextView Worker9Hs = findViewById(R.id.worker9Hs);
+        TextView Worker9TH = findViewById(R.id.worker9TH);
+        TextView Worker9Ls = findViewById(R.id.worker9LH);
+
+        TextView Worker10Nome = findViewById(R.id.worker10Nome);
+        TextView Worker10Hs = findViewById(R.id.worker10Hs);
+        TextView Worker10TH = findViewById(R.id.worker10TH);
+        TextView Worker10Ls = findViewById(R.id.worker10LH);
+
+        TextView Worker11Nome = findViewById(R.id.Worker11Name);
+        TextView Worker11Hs = findViewById(R.id.Worker11Hs);
+        TextView Worker11TH = findViewById(R.id.Worker11TH);
+        TextView Worker11Ls = findViewById(R.id.Worker11LH);
+        TextView Worker12Nome = findViewById(R.id.worker12Nome);
+        TextView Worker12Hs = findViewById(R.id.worker12Hs);
+        TextView Worker12TH = findViewById(R.id.worker12TH);
+        TextView Worker12Ls = findViewById(R.id.worker12LH);
+        TextView Worker13Nome = findViewById(R.id.worker13Nome);
+        TextView Worker13Hs = findViewById(R.id.worker13Hs);
+        TextView Worker13TH = findViewById(R.id.worker13TH);
+        TextView Worker13Ls = findViewById(R.id.worker13LH);
+        TextView Worker14Nome = findViewById(R.id.worker14Nome);
+        TextView Worker14Hs = findViewById(R.id.worker14Hs);
+        TextView Worker14TH = findViewById(R.id.worker14TH);
+        TextView Worker14Ls = findViewById(R.id.worker14LH);
+
+        TextView Worker15Nome = findViewById(R.id.worker15Nome);
+        TextView Worker15Hs = findViewById(R.id.worker15Hs);
+        TextView Worker15TH = findViewById(R.id.worker15TH);
+        TextView Worker15Ls = findViewById(R.id.worker15LH);
+
+        TextView Worker16Nome = findViewById(R.id.worker16Nome);
+        TextView Worker16Hs = findViewById(R.id.worker16Hs);
+        TextView Worker16TH = findViewById(R.id.worker16TH);
+        TextView Worker16Ls = findViewById(R.id.worker16LH);
+
+        TextView Worker17Nome = findViewById(R.id.worker17Nome);
+        TextView Worker17Hs = findViewById(R.id.worker17Hs);
+        TextView Worker17TH = findViewById(R.id.worker17TH);
+        TextView Worker17Ls = findViewById(R.id.worker17LH);
+
+        TextView Worker18Nome = findViewById(R.id.worker18Nome);
+        TextView Worker18Hs = findViewById(R.id.worker18Hs);
+        TextView Worker18TH = findViewById(R.id.worker18TH);
+        TextView Worker18Ls = findViewById(R.id.worker18LH);
+
+        TextView Worker19Nome = findViewById(R.id.worker19Nome);
+        TextView Worker19Hs = findViewById(R.id.worker19Hs);
+        TextView Worker19TH = findViewById(R.id.worker19TH);
+        TextView Worker19Ls = findViewById(R.id.worker19LH);
+
+        TextView Worker20Nome = findViewById(R.id.worker20Nome);
+        TextView Worker20Hs = findViewById(R.id.worker20Hs);
+        TextView Worker20TH = findViewById(R.id.worker20TH);
+        TextView Worker20Ls = findViewById(R.id.worker20LH);
 
 
         SharedPreferences settings = getSharedPreferences("tupiniquim", 0);
@@ -178,6 +260,128 @@ public class Painel extends AppCompatActivity implements NavigationView.OnNaviga
                     Worker3Nome.setText(nomeDele);
                     Worker3TH.setText(totalHash);
                     Worker3Ls.setText(LastHashR);
+                }
+                if (i==3) {
+                    Worker4Hs.setText(hashrate);
+                    Worker4Nome.setText(nomeDele);
+                    Worker4TH.setText(totalHash);
+                    Worker4Ls.setText(LastHashR);
+                }
+                if (i==4) {
+                    Worker5Hs.setText(hashrate);
+                    Worker5Nome.setText(nomeDele);
+                    Worker5TH.setText(totalHash);
+                    Worker5Ls.setText(LastHashR);
+                }
+                if (i==5) {
+                    Worker6Hs.setText(hashrate);
+                    Worker6Nome.setText(nomeDele);
+                    Worker6TH.setText(totalHash);
+                    Worker6Ls.setText(LastHashR);
+                }
+                if (i==6) {
+                    Worker7Hs.setText(hashrate);
+                    Worker7Nome.setText(nomeDele);
+                    Worker7TH.setText(totalHash);
+                    Worker7Ls.setText(LastHashR);
+                }
+                if (i==7) {
+                    Worker8Hs.setText(hashrate);
+                    Worker8Nome.setText(nomeDele);
+                    Worker8TH.setText(totalHash);
+                    Worker8Ls.setText(LastHashR);
+                }
+                if (i==8) {
+                    Worker9Hs.setText(hashrate);
+                    Worker9Nome.setText(nomeDele);
+                    Worker9TH.setText(totalHash);
+                    Worker9Ls.setText(LastHashR);
+                }
+                if (i==9) {
+                    Worker10Hs.setText(hashrate);
+                    Worker10Nome.setText(nomeDele);
+                    Worker10TH.setText(totalHash);
+                    Worker10Ls.setText(LastHashR);
+                }
+                if (i==10) {
+                    Worker11Hs.setText(hashrate);
+                    Worker11Nome.setText(nomeDele);
+                    Worker11TH.setText(totalHash);
+                    Worker11Ls.setText(LastHashR);
+                    TableRow Worker = findViewById(R.id.Worker11);
+                    Worker.setVisibility(View.VISIBLE);
+                }
+                if (i==11) {
+                    Worker12Hs.setText(hashrate);
+                    Worker12Nome.setText(nomeDele);
+                    Worker12TH.setText(totalHash);
+                    Worker12Ls.setText(LastHashR);
+                    TableRow Worker = findViewById(R.id.Worker12);
+                    Worker.setVisibility(View.VISIBLE);
+                }
+                if (i==12) {
+                    Worker13Hs.setText(hashrate);
+                    Worker13Nome.setText(nomeDele);
+                    Worker13TH.setText(totalHash);
+                    Worker13Ls.setText(LastHashR);
+                    TableRow Worker = findViewById(R.id.Worker13);
+                    Worker.setVisibility(View.VISIBLE);
+                }
+                if (i==13) {
+                    Worker14Hs.setText(hashrate);
+                    Worker14Nome.setText(nomeDele);
+                    Worker14TH.setText(totalHash);
+                    Worker14Ls.setText(LastHashR);
+                    TableRow Worker = findViewById(R.id.Worker14);
+                    Worker.setVisibility(View.VISIBLE);
+                }
+                if (i==14) {
+                    Worker15Hs.setText(hashrate);
+                    Worker15Nome.setText(nomeDele);
+                    Worker15TH.setText(totalHash);
+                    Worker15Ls.setText(LastHashR);
+                    TableRow Worker = findViewById(R.id.Worker15);
+                    Worker.setVisibility(View.VISIBLE);
+                }
+                if (i==15) {
+                    Worker16Hs.setText(hashrate);
+                    Worker16Nome.setText(nomeDele);
+                    Worker16TH.setText(totalHash);
+                    Worker16Ls.setText(LastHashR);
+                    TableRow Worker = findViewById(R.id.Worker16);
+                    Worker.setVisibility(View.VISIBLE);
+                }
+                if (i==16) {
+                    Worker17Hs.setText(hashrate);
+                    Worker17Nome.setText(nomeDele);
+                    Worker17TH.setText(totalHash);
+                    Worker17Ls.setText(LastHashR);
+                    TableRow Worker = findViewById(R.id.Worker17);
+                    Worker.setVisibility(View.VISIBLE);
+                }
+                if (i==17) {
+                    Worker18Hs.setText(hashrate);
+                    Worker18Nome.setText(nomeDele);
+                    Worker18TH.setText(totalHash);
+                    Worker18Ls.setText(LastHashR);
+                    TableRow Worker = findViewById(R.id.Worker18);
+                    Worker.setVisibility(View.VISIBLE);
+                }
+                if (i==18) {
+                    Worker19Hs.setText(hashrate);
+                    Worker19Nome.setText(nomeDele);
+                    Worker19TH.setText(totalHash);
+                    Worker19Ls.setText(LastHashR);
+                    TableRow Worker = findViewById(R.id.Worker19);
+                    Worker.setVisibility(View.VISIBLE);
+                }
+                if (i==19) {
+                    Worker20Hs.setText(hashrate);
+                    Worker20Nome.setText(nomeDele);
+                    Worker20TH.setText(totalHash);
+                    Worker20Ls.setText(LastHashR);
+                    TableRow Worker = findViewById(R.id.Worker20);
+                    Worker.setVisibility(View.VISIBLE);
                 }
 
 
