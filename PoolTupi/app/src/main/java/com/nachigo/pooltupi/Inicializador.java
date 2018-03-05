@@ -76,16 +76,17 @@ public class Inicializador {
 
             double devidoDec = devido*0.000000000001;
             double pagoDec = pago*0.000000000001;
-
-            String pagoString = pagoDec + " AEON";
+            DecimalFormat dfPag = new DecimalFormat("0.##########");
+            String pagoString = dfPag.format(pagoDec) + " AEON";
+            String devidoString = dfPag.format(devidoDec) + " AEON";
             priceAeonBrl.setText(priceString);
             HashMiner.setText(hs);
             TotalHash.setText(totalHash);
-            TotalDevido.setText(devidoDec + " AEON");
+            TotalDevido.setText(devidoString);
             TotalPago.setText(pagoString);
         } catch (Exception e){
             e.printStackTrace();
-            Toast.makeText(mContext, "Carteira incorreta ", Toast.LENGTH_LONG).show();
+            Toast.makeText(mContext, R.string.WrongWallet, Toast.LENGTH_LONG).show();
         }
     }
 

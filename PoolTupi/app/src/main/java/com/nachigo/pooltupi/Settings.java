@@ -12,10 +12,19 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.text.Layout;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
+import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.Switch;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Settings extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
@@ -43,9 +52,77 @@ public class Settings extends AppCompatActivity implements NavigationView.OnNavi
         Boolean notify = settings.getBoolean("notify", true);
         if (notify){
             Block.setChecked(true);
+            LinearLayout NotifyTime = findViewById(R.id.NotifyTime);
+            NotifyTime.setVisibility(View.VISIBLE);
         } else {
             Block.setChecked(false);
         }
+
+        List<String> tempo = new ArrayList<String>();
+        tempo.add("1 min");
+        tempo.add("2 min");
+        tempo.add("5 min");
+        tempo.add("10 min");
+
+        Spinner spinner = findViewById(R.id.spinner);
+
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, tempo);
+        ArrayAdapter<String> spinnerArrayAdapter = arrayAdapter;
+        spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        spinner.setAdapter(spinnerArrayAdapter);
+        int posSpinner = settings.getInt("NotifyTime", 1);
+        if (posSpinner == 1) {
+            spinner.setSelection(0);
+        }
+        if (posSpinner == 2) {
+            spinner.setSelection(1);
+        }
+        if (posSpinner == 5) {
+            spinner.setSelection(2);
+        }
+        if (posSpinner == 10) {
+            spinner.setSelection(3);
+        }
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Spinner spinner1 = findViewById(R.id.spinner);
+                if (i==0){
+                    SharedPreferences settings = getSharedPreferences("tupiniquim", 0);
+                    SharedPreferences.Editor editor = settings.edit();
+                    editor.putInt("NotificationTime", 1);
+                    spinner1.setSelection(0);
+
+                }
+                if (i==1){
+                    SharedPreferences settings = getSharedPreferences("tupiniquim", 0);
+                    SharedPreferences.Editor editor = settings.edit();
+                    editor.putInt("NotificationTime", 2);
+                    spinner1.setSelection(1);
+                }
+                if (i==2){
+                    SharedPreferences settings = getSharedPreferences("tupiniquim", 0);
+                    SharedPreferences.Editor editor = settings.edit();
+                    editor.putInt("NotificationTime", 5);
+                    spinner1.setSelection(2);
+                }
+                if (i==3){
+                    SharedPreferences settings = getSharedPreferences("tupiniquim", 0);
+                    SharedPreferences.Editor editor = settings.edit();
+                    editor.putInt("NotificationTime", 10);
+                    spinner1.setSelection(3);
+                }
+                AlarmMgr alarmMgr = new AlarmMgr();
+                alarmMgr.CancelAlarm(getApplicationContext());
+                alarmMgr.Alarm(getApplicationContext());
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                //Do nothing
+            }
+        });
 
         Block.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -68,6 +145,9 @@ public class Settings extends AppCompatActivity implements NavigationView.OnNavi
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
+
+                    LinearLayout NotifyTime = findViewById(R.id.NotifyTime);
+                    NotifyTime.setVisibility(View.VISIBLE);
                 } else {
                     SharedPreferences settings = getSharedPreferences("tupiniquim", 0);
                     SharedPreferences.Editor editor = settings.edit();
@@ -88,9 +168,13 @@ public class Settings extends AppCompatActivity implements NavigationView.OnNavi
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
+                    LinearLayout NotifyTime = findViewById(R.id.NotifyTime);
+                    NotifyTime.setVisibility(View.GONE);
                 }
             }
         });
+
+
     }
 
     @Override

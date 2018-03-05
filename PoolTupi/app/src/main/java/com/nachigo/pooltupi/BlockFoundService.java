@@ -82,11 +82,9 @@ public class BlockFoundService  extends IntentService{
                     } else {
                         //não encontrou, faça um grande nada
                     }
-                    new Thread().sleep(59000);
                 } else {
                     editor.putInt("lastBlock", blockFound);
                     editor.commit();
-                    new Thread().sleep(59000);
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -94,6 +92,9 @@ public class BlockFoundService  extends IntentService{
     }
 
     public void notificando(){
+        SharedPreferences settings = getSharedPreferences("tupiniquim", 0);
+        SharedPreferences.Editor editor = settings.edit();
+        int mId = settings.getInt("noticationID", 0);
         Intent resultIntent = new Intent(this, MainActivity.class);
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
@@ -117,8 +118,9 @@ public class BlockFoundService  extends IntentService{
 // Adds the Intent that starts the Activity to the top of the stack
         stackBuilder.addNextIntent(resultIntent);
         NotificationManager mNotifyMgr = (NotificationManager) getSystemService(Activity.NOTIFICATION_SERVICE);
-        mNotifyMgr.notify(007, mBuilder.build());
+        mNotifyMgr.notify(mId, mBuilder.build());
+        editor.putInt("noticationID", mId+1 );
+        editor.commit();
 
     }
-
 }
