@@ -31,26 +31,16 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="81dp"
-                    android:text="Aplicativo para monitoramento das informações da pooltupi.com "
+                    android:text="@string/Description"
                     android:textAlignment="center"
                     android:textAllCaps="false"
                     android:textColor="@android:color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="86dp"
-                    android:text="Desenvolvido e testado por membros da comunidade."
-                    android:textAlignment="center"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="23dp" />
+                    android:layout_height="200dp" />
 
                 <TextView
                     android:id="@+id/textView9"

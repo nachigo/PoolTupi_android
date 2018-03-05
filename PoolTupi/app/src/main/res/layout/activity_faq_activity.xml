@@ -45,7 +45,7 @@
                             android:id="@+id/textView2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Perguntas e Respostas"
+                            android:text="@string/FAQ"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
                             android:textSize="24sp"

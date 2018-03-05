@@ -30,7 +30,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <Space
@@ -43,7 +43,7 @@
                         android:layout_height="48dp"
                         android:layout_weight="1"
                         android:checked="true"
-                        android:text="Notificar novos blocos?"
+                        android:text="@string/NotifyBlock"
                         android:textAlignment="textStart" />
 
                     <Space
@@ -51,6 +51,42 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0" />
                 </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/NotifyTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Space
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/NotifyTime"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/background_dark" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:visibility="visible" />
+
+                    <Space
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0" />
+                </LinearLayout>
+
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
