@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -13,31 +13,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activitys.MainActivity"></activity>
+
+        <receiver
+            android:name=".Services.SampleBootReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activitys.Painel"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".Activitys.FAQ_activity" />
+        <activity android:name=".Activitys.Settings" />
+        <activity android:name=".Activitys.Sobre" />
+
+        <service
+            android:name=".Services.BlockFoundService"
+            android:exported="false" />
+
+        <activity android:name=".Activitys.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <receiver android:name=".SampleBootReceiver"
-            android:enabled="true">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
-            </intent-filter>
-        </receiver>
-        
-        <activity
-            android:name=".BarraLateral"
-            android:label="@string/title_activity_barra_lateral"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Painel" />
-        <activity android:name=".FAQ_activity" />
-        <activity android:name=".Settings" />
-        <activity android:name=".Sobre"></activity>
-        <service android:name=".BlockFoundService"
-            android:exported="false" />
+        <activity android:name=".Activitys.Calculadora"></activity>
     </application>
 
 </manifest>

@@ -17,6 +17,10 @@
             android:id="@+id/nav_duvidas"
             android:icon="@android:drawable/ic_menu_help"
             android:title="@string/FAQ_nav" />
+        <item
+            android:id="@+id/nav_calculadora"
+            android:icon="@drawable/calculator"
+            android:title="Calculadora" />
     </group>
 
     <item android:title="Comunidade">
@@ -24,11 +28,11 @@
             <item
                 android:id="@+id/nav_telegram"
                 android:icon="@drawable/telegram"
-                android:title="Telegram Group" />
+                android:title="Telegram" />
             <item
                 android:id="@+id/nav_whatsapp"
                 android:icon="@drawable/whatsapp"
-                android:title="WhatsApp Group" />
+                android:title="WhatsApp" />
         </menu>
     </item>
     <item android:title="Info">

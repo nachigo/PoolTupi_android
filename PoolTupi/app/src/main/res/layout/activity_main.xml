@@ -400,102 +400,122 @@
 
                 </LinearLayout>
 
-                <android.support.v7.widget.CardView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <Space
+                        android:layout_width="18dp"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="328dp"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:paddingBottom="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="8dp">
 
-                        <TextView
-                            android:id="@+id/textView2"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/Text_inicial_titulo"
-                            android:textAlignment="center"
-                            android:textColor="@android:color/black"
-                            android:textSize="23sp"
-                            android:textStyle="bold" />
+                            android:orientation="vertical">
 
-                        <Space
-                            android:layout_width="match_parent"
-                            android:layout_height="12dp" />
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Text_inicial_titulo"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="23sp"
+                                android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/Text_inicial_1titulo_sec"
-                            android:textAlignment="center"
-                            android:textColor="@android:color/black"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="12dp" />
 
-                        <Space
-                            android:layout_width="match_parent"
-                            android:layout_height="15dp" />
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Text_inicial_1titulo_sec"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/Text_inicial_parte_inicial"
-                            android:textAlignment="center"
-                            android:textSize="18sp" />
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp" />
 
-                        <Space
-                            android:layout_width="match_parent"
-                            android:layout_height="19dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Text_inicial_parte_inicial"
+                                android:textAlignment="center"
+                                android:textSize="18sp" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/Text_inicial_2titulo_sec"
-                            android:textAlignment="center"
-                            android:textColor="@android:color/black"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="19dp" />
 
-                        <Space
-                            android:layout_width="match_parent"
-                            android:layout_height="14dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Text_inicial_2titulo_sec"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/Text_inicial_topicos0"
-                            android:textAlignment="center"
-                            android:textSize="18sp" />
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="14dp" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/Text_inicial_topicos1"
-                            android:textAlignment="center"
-                            android:textSize="18sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Text_inicial_topicos0"
+                                android:textAlignment="center"
+                                android:textSize="18sp" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/Text_inicial_topicos2"
-                            android:textAlignment="center"
-                            android:textSize="18sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Text_inicial_topicos1"
+                                android:textAlignment="center"
+                                android:textSize="18sp" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/Text_inicial_topicos3"
-                            android:textAlignment="center"
-                            android:textSize="18sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Text_inicial_topicos2"
+                                android:textAlignment="center"
+                                android:textSize="18sp" />
 
-                    </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Text_inicial_topicos3"
+                                android:textAlignment="center"
+                                android:textSize="18sp" />
 
-                </android.support.v7.widget.CardView>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <Space
+                        android:layout_width="18dp"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="10dp"
                     android:layout_weight="0.01" />
 
             </LinearLayout>

@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">PoolTupi</string>
+    <string name="title_activity_barra_lateral">BarraLateral</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="ID_carteira"> Dirección de su cartera</string>
+
+    <string name="Text_inicial_titulo">Bienvenido a la pool tupi de mineria AEON!</string>
+    <string name="Text_inicial_1titulo_sec">¿Qué es el AEON?</string>
+    <string name="Text_inicial_parte_inicial">AEON es una criptomoneda alternativa a lo Bitcoin con foco en privacidad y dispositivos móviles. Diferente da mineria de Bitcoin - que necesita de máquinas específicas y extremadamente caras - el AEON es ventajoso por poder ser minado con practicamente cualquier procesador (CPU) o tarjeta gráfica (GPU). El AEON es actualmente la melhor criptomoneda para la mineria con CPUs.</string>
+    <string name="Text_inicial_2titulo_sec">¿Por qué minar con nosotros?</string>
+    <string name="Text_inicial_topicos0">* Nosotros somos una iniciativa brasilera. Desarrollamos recursos y tutoriales, y somos una comunidad unida de mineros que se ayuda via Telegram y WhatsApp. </string>
+    <string name="Text_inicial_topicos1">* Monitorización por e-mail: reciba notificaciones si sus mineros paran.</string>
+    <string name="Text_inicial_topicos2">* Servidores brasileros. No es necesario preocuparse por la latencia de mineria en servidores extranjeros.</string>
+    <string name="Text_inicial_topicos3">* Sistema de pagos PPLNS que recompensa a los mineros leales. Pagos a partir de 0.25 AEON y tasa de 0.6% por bloque para ayudar a mantener la estructura de los servidores</string>
+
+    <string name="FAQ_resposta1">AEON es una criptomoneda alternativa con foco en la privacidad y aplicaciones leves (como celulares y tablets). se basea en Monero y tiene su código livre y abierto a todos. Diferente de criptomonedas como Bitcoin, que necesita de ordenadores especializados, lo AEON puede ser minado tanto con tarjetas gráficas (GPU) como con procesadores normales (CPU).</string>
+    <string name="FAQ_resposta2">El AEON es una criptomoneda en la que creemos tener futuro. Minerar AEON es fácil para todos, independiente de lo ordenador. Es mucho más fácil y rápido conseguir el pago mínimo en AEON que en otras criptomonedas. Eso significa que en cuestión de días o semanas usted ya tendrá acceso a sus fondos, y usted puede fácilmente comprar otras criptomedas como Bitcoin, Monero y Ethereum usando AEON en corredoras en línea.</string>
+    <string name="FAQ_resposta3">Minerar criptomonedas parece un proceso complicado, pero no necesita ser. Siga nuestra página de primeros pasos para empezar a minar todavía hoy. La página te mostrará desde cómo abrir una cartera digital para recibir tus fondos, la configuración de tu ordenador, servidor o rig.</string>
+    <string name="FAQ_resposta4">Esfuerzo es una variable estadística que estima cuántos hash son necesarios enviar para encontrar un bloque y dividir la recompensa. Esto es sólo una estimación donde esfuerzo = hashesEnviados / dificultadRed. Ejemplos: cuando un bloque necesita un 200% de esfuerzo, significa que supuestamente enviamos 2 veces más hash que lo necesario para encontrar un bloque. Al mismo tiempo, los bloques que necesitaban un 50% de esfuerzo se encontraron supuestamente 2 veces más rápidos.</string>
+    <string name="FAQ_resposta5">El sistema se llama Pay Per Last N Shares. La recompensa que cada minero recibe es referente a los hash sometidos durante la ventana del PPLNS hasta que un bloque sea encontrado. La ventana actual es equivalente al 200% de esfuerzo. Este sistema favorece a los mineros leales y proporciona protección contra los pool hoppers (que reducen la recompensa de los mineros consistentes).</string>
+    <string name="FAQ_resposta6">Al alcanzar el límite de pago mínimo (actualmente 0.25 AEON), el pool intentará efectuar un pago a la dirección de su cartera. La pool realiza pagos cada 6 horas. Asegúrese siempre que su cartera esté correctamente configurada para que el pago se realice, de lo contrario el pool no será capaz de pagar. Recuerde que un bloque sólo tiene la recompensa dividida después de que otros 60 bloques sean minados en la red del AEON (aprox. 4 horas).</string>
+    <string name="FAQ_resposta7">Usted puede configurar carteras normales y carteras de casas de cambio directamente en la piscina. El formato para insertar su cartera con el identificador de pago es direcciónCartera.PaymentID. Ejemplo, si la cartera tiene la dirección ABC con el Id. 123, debe configurar su minero con ABC.123 (separados por un punto).</string>
+    <string name="FAQ_resposta8">El sistema PPLNS distribuye pagos basados en el rendimiento y la suerte del pool, por lo que no se pagan los huérfanos. Un bloque huérfano es un bloque que la agrupación encontró, pero que no fue aceptada por la red de AEON (esto ocurre cuando otro pool encuentra el bloque al mismo tiempo, pero lo transmite más rápidamente a la red).</string>
+    <string name="FAQ_resposta9">Dado que no tenemos una manera concreta de probar que usted es el verdadero dueño de una cartera, no es posible realizar ese cambio. Si usted realmente es dueño de ambas carteras, lo mejor es alcanzar el pago mínimo lo más rápido posible en una y pasar a la minería en la más nueva.</string>
+    <string name="FAQ_resposta10">La pool tupí es una iniciativa brasileña que posee una serie de objetivos que van más allá de "ganar dinero con moneda virtual". El primer punto es que creemos que las criptomoedas / blockchain son tecnologías disruptivas que van a cambiar la forma en que el mundo transita. no creemos que el objetivo de la criptomoneda es simplemente venderla por reales o dólares.
+        Estamos creando una comunidad de mineros unidos. Desarrollamos recursos, tutoriales y damos asistencia para quien quiere comenzar en ese mundo. Nosotros queremos crecer el escenario de minería en la América del Sur, pero queremos crecerlo alineado con el primer punto, Pool Tupi no quiere promover minería como "esquema para hacerse rico".</string>
+    <string name="FAQ_resposta11">La agrupación cobra una tasa baja de 0.6% de cada bloque encontrado. Este valor es mucho menor que otras pools internacionales. A pesar de la tasa, el pool opera en constante perjuicio. Pagamos la infraestructura directamente de nuestro bolsillo pues creemos que en el futuro las criptomonedas tendrán mayor valor e importancia. Las mayores operaciones mineras en el mundo están en Rusia, China y Estados Unidos. Queremos contribuir al escenario de minería brasileño.</string>
+    <string name="FAQ_resposta12">No hay soporte técnico dedicado. La comunidad y los administradores de la pool se reúnen en el grupo oficial del Telegram de los mineros. Si usted tiene alguna duda, su mejor oportunidad es entrar en el grupo y hacer sus preguntas. La comunidad es amigable y normalmente quita las dudas de la persona rápidamente.</string>
+    <string name="FAQ_resposta13">Usted puede ponerse en contacto con los administradores vía e-mail: pooltupi@protonmail.com. Este e-mail es consultado periódicamente y no es un buen canal para pedir ayuda o soporte. Si tiene dudas, únase a la comunidad vía Telegram o por el grupo de WhatsApp y haga su pregunta.</string>
+    <string name="FAQ_resposta14">Su hash rate es el responsable de la cantidad de recompensa que recibirá por bloque. Cuanto mayor sea el hash rate, mayor será la recompensa. Los hash totales existen simplemente para proporcionar una idea de cuánto se ha contribuido a la pool. Recuerde que la agrupación considera solamente la participación en los últimos 200% de esfuerzo.</string>
+    <string name="FAQ_resposta15">Sí. El valor mostrado es una media de las acciones enviadas en los últimos 60 minutos. El pool no muestra los valores exactos, ya que esto sería muy pesado para el servidor. De cualquier forma, el valor más preciso que usted puede adquirir es lo que está directamente en su software de minería. Para tener una idea concreta de cómo el pool está recibiendo su hashrate, observe el valor promedio en las últimas 24 horas. Esto representará con mucho más precisión el valor real.</string>
+    <string name="FAQ_resposta16">Sí. Además de facilitar la centralización de sus fondos en un solo lugar, usted también alcanzará el pago mínimo de 0.25 AEONs más rápidamente.</string>
+    <string name="FAQ_resposta17">Recomendamos el uso de mineros de código abierto. En nuestra página de primeros pasos usted ve guías y enlaces a los principales mineros de AEON (Solo en portugués). Usted también puede minar directamente desde su navegador. Si desea minar de otra manera o con otro software, deberá buscar cómo configurar los mineros por su cuenta.</string>
+    <string name="FAQ_resposta18">Hashes son literalmente las posibles soluciones para el bloque. Como hemos visto anteriormente, cuanto mayor sea el hash, mayor será su participación en la recompensa del bloque. Las acciones son simplemente "conjuntos" de hash que se envían a la pool. Las acciones existen para que la agrupación consiga manejar un gran volumen de hash de todos los mineros sin que el servidor se congele. Un share se crea con la suma de todos sus hash de los últimos 60 segundos. Es decir, un minero envía 1 share cada 1 minuto, independientemente de la cantidad de hash que hizo.</string>
+    <string name="FAQ_resposta19">Sí. Puede acceder a la API de la agrupación en esta dirección: https://pooltupi.com/api. La API es robusta y tiene un desarrollo constante, documentación: https://cryptonote-pool-api.restlet.io/.</string>
+    <string name="FAQ_resposta20">Cada ordenador tiene piezas diferentes que resultan en un hash de valor diferente. La mejor manera de "estimar" cuántas hash por segundo un ordenador hace es buscar el CPU o la GPU en el sitio de benchmarks de Monero.
+Como referencia, al minar AEON con GPU su hashrate debe ser multiplicado por 2. Al hacer con CPU, normalmente multiplicado por 3 o 4. Si en el Monero su GPU hace 700 H / s, en el AEON ella va a hacer 1400 H / s aproximadamente. Si su CPU hace 400 H / s en Monero, va a hacer entre 1200 y 1600 H / s en AEON.</string>
+    <string name="FAQ_resposta21">Pools funcionan basado en rendimiento y suerte, pero es posible calcular una estimación de cuántos AEON usted puede hacer por día, semana o mes con un hash rate frecuente. Para ello, utilice el sitio WhatToMine y coloque la información necesaria.</string>
+    <string name="FAQ_resposta22">Esta es la pregunta de un millón de reales que no tiene una respuesta correcta. Criptomoeda es un mercado extremadamente volátil y los valores de las monedas flotan mucho tanto hacia arriba y hacia abajo. Es prácticamente imposible calcular su retorno de inversión en reales, pues sabemos que la moneda puede valorar drásticamente en pocos días. Vamos a dar un ejemplo:
+De acuerdo con el sitio CoinMarketCap, el 1 de septiembre de 2017 el AEON estaba valiendo U $ 0.90. A finales del año 2017 el AEON llegó a valer US $ 6.00, lo que se traduce en una valoración de aproximadamente 660% en 4 meses. Lo que queremos decir con todo esto es que la respuesta a esta pregunta depende de muchos factores, y nadie sabe a dónde va a parar el mercado de las criptomoedas.
+Si su objetivo es ganar una cantidad fija de reales (BRL) por mes, entonces usted necesita considerar: su recompensa promedio por mes multiplicado por el valor en dólares y convertirlo a reales. Usted probablemente lo hará convirtiendo su AEON a Bitcoin y luego cambiando su Bitcoin a reales. El problema con este cálculo es que usted no va a considerar la volatilidad del valor de las monedas, lo que lo hace muy impreciso.</string>
+    <string name="FAQ_resposta23">La piscina tupi minera AEON por la facilidad en realizar pagos a los mineros y también porque creemos en el proyecto. El AEON es una de las pocas criptomoedas con foco en privacidad y posee una comunidad activa y desarrollo dirigido por uno de los core desarrolladores del Monero, el smooth.
+Pero usted posee toda la libertad de intercambiar sus AEONs por otras criptomedas, incluyendo Bitcoin, Monero, Ethereum, Nano, entre otros. Minerar AEON te permite pagos con cierta velocidad, lo que te da flexibilidad para diversificar tus inversiones. Las dos grandes casas de cambio en la actualidad que negocian AEON son HitBTC y Bittrex. Crea una cuenta en una de estas casas de cambio e intercambia tus AEON por otras criptomonas.
+Si desea intercambiarlo por reales, primero debe vender los AEON por Bitcoin y usar una casa de cambio brasileña de Bitcoin (como FoxBit o Mercado Bitcoin) para cambiarlos por reales.</string>
+    <string name="FAQ_resposta24">Usamos los proyectos de código abierto nodejs-pool y poolui.</string>
+
+
+    <string name="FAQ_Subtitulo1">¿Qué es el AEON?</string>
+    <string name="FAQ_Subtitulo2">¿Por qué minar AEON?</string>
+    <string name="FAQ_Subtitulo3">¿Como hago para minar?</string>
+    <string name="FAQ_Subtitulo4">¿Qué significa el "esfuerzo actual"?</string>
+    <string name="FAQ_Subtitulo5">¿Qué es el sistema de pagos PPLNS?</string>
+    <string name="FAQ_Subtitulo6">¿Cuando recibo mis pagos?</string>
+    <string name="FAQ_Subtitulo7">¿Cómo reciber directamente en la casa de cambio Bittrex (o otra casa de cambio que solicite Payment ID)?</string>
+    <string name="FAQ_Subtitulo8">¿La pool paga por bloques huérfanos?</string>
+    <string name="FAQ_Subtitulo9">¿Puedo cambiar la dirección de mi cartera y transferir el total debido?</string>
+    <string name="FAQ_Subtitulo10">¿Qué es la Pool Tupi?</string>
+    <string name="FAQ_Subtitulo11">¿Cómo se sostiene la pool?</string>
+    <string name="FAQ_Subtitulo12">¿Cómo entro en contacto con el soporte técnico?</string>
+    <string name="FAQ_Subtitulo13">¿Cómo entro en contacto con los administradores?</string>
+    <string name="FAQ_Subtitulo14">¿Para qué sirve supervisar mi hash rate y mis hashes totales?</string>
+    <string name="FAQ_Subtitulo15">¿Mi hashrate está variando mucho en el sitio, ée normal?</string>
+    <string name="FAQ_Subtitulo16">¿Puedo colocar dos ordenadores/servidores para minar en la misma cuenta?</string>
+    <string name="FAQ_Subtitulo17">¿Cual minero debo usar?</string>
+    <string name="FAQ_Subtitulo18">¿Cual es la diferencia entre hash y shares?</string>
+    <string name="FAQ_Subtitulo19">¿La pool tiene alguna API para mí desarrollar mi supervisión personal?</string>
+    <string name="FAQ_Subtitulo20">¿Cuantos hash por segundo mi ordenador es capaz de hacer?</string>
+    <string name="FAQ_Subtitulo21">¿Cuantos AEONs hago con mi hash rate?</string>
+    <string name="FAQ_Subtitulo22">¿Está compensando financeiramente la mineria de AEON?</string>
+    <string name="FAQ_Subtitulo23">¿Como cambio mis AEONs por otras criptomonedas o por dinero?</string>
+    <string name="FAQ_Subtitulo24">¿Como se hizo esta pool?</string>
+
+    <string name="FAQ_Titulo1">Iniciando en la mineria de criptomonedas</string>
+    <string name="FAQ_Titulo2">Pagos</string>
+    <string name="FAQ_Titulo3">Acerca de la pool</string>
+    <string name="FAQ_Titulo4">Minería avanzada</string>
+    <string name="FAQ_Titulo5">Otras preguntas</string>
+
+
+    <string name="WorkerName">Trabajador</string>
+    <string name="WorkerHS">Hashrate</string>
+    <string name="WorkerTH">Hashes totales</string>
+    <string name="WokerLH">Hash pasado</string>
+
+
+    <string name="WrongWallet">Cartera incorrecta</string>
+    <string name="NotifyBlock">Notificar nuevo bloque?</string>
+    <string name="Description">Aplicación para el seguimiento de la información de pooltupi.com</string>
+
+    <string name="LiveStats">+ estado en vivo</string>
+    <string name="TotalPaid">Total pagado</string>
+    <string name="TotalDue">Total debido</string>
+    <string name="Effort">Esfuerzo</string>
+    <string name="Miners">Mineradores</string>
+    <string name="PoolHashrate">Hashrate</string>
+    <string name="BlocksFound">Bloques</string>
+
+    <string name="FAQ">Preguntas e Respuestas</string>
+    <string name="InitialPage">Página de inicio</string>
+    <string name="Dashboard">Panel</string>
+    <string name="FAQ_nav">Tira sus dudas</string>
+    <string name="Settings">Ajustes</string>
+    <string name="About">Sobre</string>
+    <string name="NotifyTime">Notificar a cada:</string>
+    <string name="OpenOnDashboard">Deseja abrir o aplicativo no painel?</string>
+
+</resources>

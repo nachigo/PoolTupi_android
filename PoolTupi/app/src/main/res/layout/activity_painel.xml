@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:openDrawer="start">
+    tools:openDrawer="start"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,6 +34,7 @@
                     android:layout_height="13dp" />
 
                 <LinearLayout
+                    android:id="@+id/idk"
                     android:layout_width="match_parent"
                     android:layout_height="154dp"
                     android:orientation="horizontal">
@@ -81,12 +84,13 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:ems="10"
+                                    android:focusable="auto"
                                     android:hint="(Começa com Wm...)"
-                                    android:inputType="text|textPersonName"
+                                    android:inputType="text"
                                     android:selectAllOnFocus="true"
                                     android:singleLine="true"
-                                    android:textAlignment="textStart"
-                                    android:textSize="18sp" />
+                                    android:textSize="18sp"
+                                    android:focusedByDefault="false"/>
 
                                 <Space
                                     android:layout_width="match_parent"
@@ -125,7 +129,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="97dp"
+                    android:layout_height="116dp"
                     android:orientation="horizontal">
 
                     <Space
@@ -134,7 +138,7 @@
 
                     <android.support.v7.widget.CardView
                         android:layout_width="328dp"
-                        android:layout_height="81dp"
+                        android:layout_height="100dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="5dp"
                         app:cardElevation="18dp"
@@ -143,7 +147,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="74dp"
+                            android:layout_height="95dp"
                             android:orientation="horizontal">
 
                             <LinearLayout
@@ -161,7 +165,6 @@
                                     android:id="@+id/TxtHashMiner"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
                                     android:textAlignment="center"
                                     android:textColor="@android:color/black"
                                     android:textSize="18sp"
@@ -174,7 +177,7 @@
                                     android:layout_marginEnd="8dp"
                                     android:layout_marginStart="8dp"
                                     android:layout_marginTop="8dp"
-                                    android:layout_weight="1"
+                                    android:layout_weight="0"
                                     android:text="@string/WorkerHS"
                                     android:textAlignment="center"
                                     android:textColor="@android:color/black"
@@ -186,6 +189,15 @@
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintVertical_bias="0.01" />
+
+                                <TextView
+                                    android:id="@+id/TxtTotalHashes"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
 
                             </LinearLayout>
 
@@ -206,7 +218,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="97dp"
+                    android:layout_height="116dp"
                     android:orientation="horizontal">
 
                     <Space
@@ -215,7 +227,7 @@
 
                     <android.support.v7.widget.CardView
                         android:layout_width="328dp"
-                        android:layout_height="81dp"
+                        android:layout_height="100dp"
                         android:layout_weight="1"
                         app:cardCornerRadius="5dp"
                         app:cardElevation="18dp"
@@ -224,12 +236,12 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="95dp"
                             android:orientation="horizontal">
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
-                                android:layout_height="79dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:orientation="vertical">
 
@@ -239,9 +251,9 @@
                                     android:layout_weight="1" />
 
                                 <TextView
-                                    android:id="@+id/TxtTotalHashes"
+                                    android:id="@+id/TxtHashD"
                                     android:layout_width="match_parent"
-                                    android:layout_height="8dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:textAlignment="center"
                                     android:textColor="@android:color/black"
@@ -250,13 +262,13 @@
 
                                 <TextView
                                     android:layout_width="match_parent"
-                                    android:layout_height="8dp"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginBottom="8dp"
                                     android:layout_marginEnd="8dp"
                                     android:layout_marginStart="8dp"
                                     android:layout_marginTop="8dp"
                                     android:layout_weight="1"
-                                    android:text="@string/WorkerTH"
+                                    android:text="Hashrate (24h)"
                                     android:textAlignment="center"
                                     android:textColor="@android:color/black"
                                     android:textSize="18sp"
@@ -267,6 +279,16 @@
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintVertical_bias="0.01" />
+
+                                <TextView
+                                    android:id="@+id/TxtProfit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
 
                             </LinearLayout>
 

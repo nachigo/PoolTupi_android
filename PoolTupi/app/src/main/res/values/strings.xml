@@ -5,8 +5,6 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
-
     <string name="ID_carteira"> Endereço da sua carteira:</string>
 
     <string name="Text_inicial_titulo">Bem-vindo à pool tupi de mineração AEON!</string>
@@ -76,7 +74,7 @@ Porém você possui toda a liberdade de trocar seus AEONs por outras criptomoeda
     <string name="FAQ_Subtitulo18">Qual a diferença entre hashes e shares?</string>
     <string name="FAQ_Subtitulo19">A pool possui alguma API para eu desenvolver meu monitoramento pessoal?</string>
     <string name="FAQ_Subtitulo20">Quantos hashes por segundo meu computador é capaz de fazer?</string>
-    <string name="FAQ_Subtitulo21">Quantos AEONs eu faço com meu sash rate?</string>
+    <string name="FAQ_Subtitulo21">Quantos AEONs eu faço com meu hash rate?</string>
     <string name="FAQ_Subtitulo22">Está compensando financeiramente minerar AEON?</string>
     <string name="FAQ_Subtitulo23">Como eu troco meus AEONs por outras criptomoedas ou por reais?</string>
     <string name="FAQ_Subtitulo24">Como essa pool foi feita?</string>
@@ -86,5 +84,27 @@ Porém você possui toda a liberdade de trocar seus AEONs por outras criptomoeda
     <string name="FAQ_Titulo3">Sobre a pool</string>
     <string name="FAQ_Titulo4">Mineração avançada</string>
     <string name="FAQ_Titulo5">Outras perguntas</string>
+    <string name="WorkerName">Trabalhador</string>
+    <string name="WorkerHS">Hashrate</string>
+    <string name="WorkerTH">Total hashes</string>
+    <string name="WokerLH">Último hash</string>
+    <string name="WrongWallet">Carteira incorreta</string>
+    <string name="NotifyBlock">Notificar novos blocos?</string>
+    <string name="Description">Aplicativo para monitoramento das informações da pooltupi.com</string>
+    <string name="LiveStats">+ STATUS AO VIVO</string>
+    <string name="TotalPaid">Total pago</string>
+    <string name="TotalDue">Total devido</string>
+    <string name="Effort">Esforço</string>
+    <string name="Miners">Mineradores</string>
+    <string name="PoolHashrate">Hashrate</string>
+    <string name="BlocksFound">Blocos</string>
+    <string name="FAQ">Perguntas e Respostas</string>
+    <string name="InitialPage">Página inicial</string>
+    <string name="Dashboard">Painel</string>
+    <string name="FAQ_nav">Tire suas dúvidas</string>
+    <string name="Settings">Configurações</string>
+    <string name="About">Sobre</string>
+    <string name="NotifyTime">Verificar a cada:</string>
+    <string name="OpenOnDashboard">Deseja abrir o aplicativo no painel?</string>
 
 </resources>
